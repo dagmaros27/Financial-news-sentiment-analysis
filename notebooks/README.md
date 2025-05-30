@@ -48,7 +48,27 @@ By extracting domains from publisher email addresses, we identified that `benzin
 **Content Differences:**  
 While the dataset is dominated by a few publishers, further analysis could explore whether these sources differ in the types of news they report (e.g., breaking news vs. analysis).
 
----
+## 5. Quantitative Analysis (Stock Price Data)
+
+**Technical Indicator Analysis:**  
+We analyzed historical stock data for major companies (AAPL, AMZN, GOOG, META, MSFT, NVDA, TSLA) using technical indicators:
+
+- **Simple Moving Average (SMA 20):**  
+  The 20-day SMA shows the general trend of the stock prices, with most stocks exhibiting a strong upward trend over the period.
+
+- **Relative Strength Index (RSI):**  
+  For most stocks, the RSI is above 70, indicating overbought conditions.
+
+- **MACD (Moving Average Convergence Divergence):**  
+  The MACD line is above the signal line for all three highlighted stocks (AAPL, META, MSFT), suggesting a bullish trend.
+
+- **Bollinger Bands:**  
+  Stocks are trading near the upper band, further suggesting overbought conditions.
+
+**Summary of Findings:**
+
+- The technical indicators collectively point to a strong bullish trend and possible overbought conditions for the analyzed stocks.
+- These quantitative signals, combined with news sentiment and frequency, can provide valuable insights for trading strategies.
 
 ## Conclusion
 
