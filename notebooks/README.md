@@ -65,6 +65,23 @@ We analyzed historical stock data for major companies (AAPL, AMZN, GOOG, META, M
 - **Bollinger Bands:**  
   Stocks are trading near the upper band, further suggesting overbought conditions.
 
+## 6. Data Preparation
+
+**Normalize Dates:**  
+Aligned dates in both news and stock datasets to ensure each news item matches the corresponding stock trading day.
+
+**Perform Sentiment Analysis:**  
+Applied a simple and effective sentiment analysis tool to assign sentiment scores to each headline.
+
+**Calculate Stock Movements:**  
+Computed daily percentage changes in stock prices to represent daily returns.
+
+**Aggregate Sentiments:**  
+Calculated average daily sentiment scores when multiple articles appeared on the same day.
+
+**Correlation Analysis:**  
+Determined the Pearson correlation coefficient between average daily sentiment scores and stock daily returns.
+
 **Summary of Findings:**
 
 - The technical indicators collectively point to a strong bullish trend and possible overbought conditions for the analyzed stocks.
@@ -81,4 +98,18 @@ The EDA provided valuable insights into the structure and content of financial n
 
 These findings can inform downstream tasks such as sentiment analysis, event detection, and automated trading strategies.
 
----
+## Correlation Between News Sentiment and Stock Price Movement
+
+- All correlations are positive but weak, ranging from 0.08 to 0.15.
+
+- This suggests a mild linear relationship between the sentiment of news and stock movements.
+
+- Among the tickers, AAPL shows the strongest correlation (0.1487), indicating it may be slightly more sensitive to sentiment shifts.
+
+- AMZN has the lowest correlation (0.0843), implying weaker influence from daily sentiment data.
+
+### Insights
+
+- While sentiment may provide some predictive signal, it alone is not a strong driver of short-term stock price changes.
+
+- This opens the door for multi-factor modeling, incorporating technical indicators, macroeconomic factors, and more granular NLP techniques (like named entity recognition or topic modeling).
