@@ -80,5 +80,3 @@ The EDA provided valuable insights into the structure and content of financial n
 - Both institutional and individual sources contribute to the news flow.
 
 These findings can inform downstream tasks such as sentiment analysis, event detection, and automated trading strategies.
-
----
