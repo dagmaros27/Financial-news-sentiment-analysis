@@ -6,7 +6,7 @@ This repository contains the work for a financial analytics challenge at **Nova 
 
 ## 🚀 Project Overview
 
-**Business Objective**:  
+**Business Objective**:
 Enhance predictive analytics capabilities by analyzing how financial news sentiment affects stock market movements, and provide actionable insights to guide investment strategies.
 
 **Companies Analyzed**:
@@ -19,17 +19,14 @@ Enhance predictive analytics capabilities by analyzing how financial news sentim
 - Nvidia (NVDA)
 - Tesla (TSLA)
 
----
-
 ## 📂 Project Structure
 
 .
-├── data/
-│ ├── financial_news.csv
+├
 ├── notebooks/
-│ ├── task_1_eda_sentiment_analysis.ipynb
-│ ├── task_2_technical_indicators.ipynb
-│ └──
+│ ├── financial_news_analysis_eda.ipynb
+│ ├── financial_data_quantitative_analysis.ipynb
+│ └── news_sentiment_analysis.ipynb
 ├── utils/
 ├── requirements.txt
 └── README.md
@@ -50,12 +47,21 @@ Enhance predictive analytics capabilities by analyzing how financial news sentim
 - Calculated financial metrics using **PyNance**
 - Visualized stock trends and indicator overlays
 
+### Task 3: Correlation between News Sentiment and Stock Movement
+
+- Aligned financial news and stock price datasets by date, normalizing timestamps for consistency.
+- Conducted sentiment analysis on news headlines using **NLTK** and **TextBlob** to quantify the tone (positive, negative, neutral) of each article.
+- Calculated daily stock returns by computing the percentage change in daily closing prices.
+- Performed correlation analysis to statistically test the relationship between daily news sentiment scores and stock returns.
+- Aggregated daily sentiment scores (e.g., average) when multiple articles appeared on the same day.
+- Determined the Pearson correlation coefficient between aggregated daily sentiment scores and stock daily returns.
+
 ---
 
 ## 📊 Tools & Libraries Used
 
 - `pandas`, `matplotlib`, `seaborn` – Data wrangling & visualization
-- `nltk` – Natural language processing
+- `nltk`, `TextBlob` – Natural language processing and sentiment analysis
 - `TA-Lib` – Technical indicators
 - `PyNance` – Financial metrics and analysis tools
 - `jupyter` – Notebooks for exploratory and analytical work
@@ -66,7 +72,7 @@ Enhance predictive analytics capabilities by analyzing how financial news sentim
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/dagmaros27/Financial-news-sentiment-analysis.git
+   git clone [https://github.com/dagmaros27/Financial-news-sentiment-analysis.git](https://github.com/dagmaros27/Financial-news-sentiment-analysis.git)
    cd financial-news-sentiment-analysis
    ```
 2. Create and activate a virtual environment:
